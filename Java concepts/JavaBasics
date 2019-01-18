@@ -1,0 +1,46 @@
+Array
+Array is a sequence of variable that stored are to next each other and have the same type.
+When you wanna create more than one variable at the same time that have the same type
+and are connected to each other in some way you wanna create an array
+ it would be therwise be like
+ int var1 ,bar2,var3,var4
+ 
+ but we can use array 
+ int[] Array; its empty
+ here you din reserve in the memory
+ if you wanna reserve something you type new
+ Array= new int[30]
+ 
+ Here you tell the memory hey i wanna create reserve in memory space for 
+ 30 variable type is int and place them next to each other in memory ,so that you can access them 
+ very easily using index
+ 
+ Array[0]=80,you count from zero in arrays
+ sysout(Array[0]);
+ 
+ you cant acces something which is out of scope ,you gonna get an error
+ Array[31]///not reserved in the memory
+ 
+ thats why in main method args is the name of the array,you can send arguments here
+ public static void main (string[] args)
+ 
+ you can also initialize an array like that
+ 
+ int[] array ={1,2,4,45}
+ 
+ this soln is rarely used coz you dont know what will be inside an array coz they are sent form database 
+ from file,but thecan be situations when you wanna initialize in one line
+ the cool thing is you can add things here and sze wud increase
+ 
+ length of the array
+ 
+ sysout(array.length)
+ 4 
+ 
+ when you wanna access last element of the array you use
+ sysout(array(array.length-1))
+ 45
+ 
+ 
+
+ 

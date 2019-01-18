@@ -1,0 +1,328 @@
+*Objects-object are containers that store variables connected to each other for easier future usage.
+*methods-things that can be done with objects,functions that you wanna perform with object.
+*properties-features of object(like width or height of monitor)
+class_blueprint of creating objects/recipe
+
+
+new -reserve for me in the memory or ram space where monitor (fields,methods) can be saved.
+Monitor monitor = new Monitor()
+now using monitor. we can acess the fileds and methods of the class
+this is called invoking the method
+
+
+class is just a blueprint,you can create multiple instances of the object
+package is something we have all the classes sorted 
+public -can be accessed from anywhere
+static-available always
+main method is the method that is gonna be executed the first when you run your program
+void-what is gonna be returned by the method when you run it,void mean it doe not return anthing.
+There could be various return types
+
+constructors-we have a class named point,now what are the properties of this class,its coordinates 
+x and y.so now we want to create the point/object we use new keyword which will reserve in ram a place for or
+our object we gonna create/copy of the object/instance of the object
+then we type the class name and then parenthesis which is invoking the default constructor.
+Now we have something in memory but we din create a reference for it,so now we have to type the type of the objetc and then 
+assign it to 
+Point p= new Point ()
+and now we can get to the x through the p dot operator
+
+p.x=10
+p.y=17
+ constructor construct something the way you wanna constuct
+ 	default cons are used to set some default vales
+ 	cosn has the same name as class
+ 	
+ 	want to for example send here for example 10 20.
+
+You need to create another constructor.
+
+With parameters.
+
+So you go to declarative for example the first parameter and then the second parameter.
+
+And well right now as you can see we don't have arrows and we didn't see also the method.
+
+This is the default constructor is because this constructor was executed.
+
+So to the first and the second veray balls and we cannot assigned these values to the values of actual
+
+objects.
+
+So we can type something like X equals first y equals second.
+
+Now when I run this program as you can see it's 10 and 20.
+
+So now when we want to create another point we just need to do something like that right.
+
+P2.
+
+And then for example four and twenty five.
+
+So constructor's allows you to do things that are constructing the object once right you don't need
+
+to copy your code.
+you can put conditions to in the constructor
+
+
+
+abstract
+
+Why something like that is so cool because look there may be many times when you create the chaos and
+
+you might think this method is very important.
+
+It's it must be implemented in the classes that will extend my class.
+
+Right.
+
+And because of something like that abstract keyword you can make sure that somebody will use it.
+
+Right.
+
+Because you can forget about one of the men and you could create many methods and you are not required
+
+to override them right.
+
+But because of the abstract keyword everybody who extends it must do something like overriding and probably
+
+not is that it's not going to work.
+abstract classes have advantage that we can have abstract methods,every child class will overrride the abstract class
+now the cool things is every clas which extends it will have it ,the imp classes need to implemented in every class so coz of this abstract
+keyword everybody must have this method
+
+
+Method is a block of code that can be inoked as many times as you want at different places
+in our code.
+you change the code at one place and then the change will be reflected at the places the method has been invoked,had it not been for methods 
+for the change to be implemented we would change at every place.
+ method name should be self explanotary
+ you should remember methods and prop inside classes that will be connected to each other
+ i mean things should be in theme
+ 
+ 
+ overloading methods
+ same method name with diffrent args list and return type can be different
+ like println method 
+ 
+ it is similar to when we create a default cons and then a const with different number of arg 
+ that is cons overloading
+ 
+ 
+ static
+ some times you want your method to exist always
+ ,so the soln is use the static keyword
+ in that case you need to create the object,you dont need to create the instance the class
+ 
+ like the main method
+ which runs without instantiating the class
+ 
+ Why.
+
+Because you have to remember that when you are creating an object it's different object.
+
+Right.
+
+And every time when I'm adding one it adds to the current property of the object of the current object.
+
+Right.
+
+And if I want to keep something always the same for all objects I need to create something called the
+
+so called static variable.
+
+So I can create a static variable the we called for example next ID and I assign one.
+
+And now I can assign.
+
+Here for example next ID right.
+
+And I can increase the next ID by 1.
+
+After that now we have good one to free.
+
+Why.
+
+Because next ID is gonna existe always and it's gonna be always
+
+the same right.
+
+
+
+Static content:If you create something like a variable int a outside static method then you cant access that 
+variable
+you might create another method to access that variable
+but if you wanna use that variable inside a static method you use static contennt
+
+StaticContent blabla = new StaticContent();
+
+
+package and access modifier
+
+package packs classes with methods and variables that are related to each other
+
+you can import other packages created by other people and hence access their classes so coz of this things are 
+easier,if everything is in one file everything would be horrible
+any public class can be accessed from a diffrenet package by importing the package that contains it
+import videocourses.Videocourse
+package.class
+and then creating the instance of the class
+VideoCourses v = new VideoCourses();
+
+or you can also direclty 
+package.class c = new package.class();
+
+if you wanna import all the classes from apackage you can use *
+also there can be only one public class per one java file
+
+
+we can import the public class from a different package but if the variable inside that class has a default modifier than
+you cant access that variable outside the package.
+If you want that variable to be accessed outside the package then make it public
+private means it can be accessed only inside the class it was created it
+protected means inside the package it was created in 
+
+
+
+encapsulation-packing properties the way that there is no direct access to them  from other classes
+
+you should make variables almost always private ,when they are private like account balance nobody cant manipulate.
+Now you want to change it you have do it through a method
+
+like getBalance() is used to get balance and this is called getter method
+getter are used to get private props of ur clas outside of your class
+
+you create a constructor to initialize the balance
+and you also need some methods to set values such methods are called setter methods and the cool
+thing is you can create tons of conditions here so that nobody sets the balance to something
+so its imp to make setters and make conditions
+
+
+reference vs primitive variable
+primitive variable is a tyypical var like int ,float,double
+refe var are class type variables
+
+when you type int you say i want to reserve 32 bytes in memory and when u write x u are going to acess it 
+via x and then you wanna assign a value to it 
+int x=40
+
+when you type new you are resrving in the ram a plcae and you assign an address in the ram not the value
+and thats why its called ref variable coz u r reffreing to the address in the ram
+
+
+ 
+
+
+
+public is accessible in every poss package
+
+
+
+comparison of strings
+
+
+when you create  a constructor with args but creating an array using the default cons you have to create the
+default constructor as well otherwise you will get errors,refer bottle class code for better clarity
+
+
+inheritance:you inherit some char from ur parents like color of eyes,heigth its the same in prog
+lets image creating a game like monster and its has its childs like zombie skeloten
+
+and they all have the common props like speed ,hitpoints .
+Now if you have to change speed then you change it in sombie and skeleton but what if you have like 50 such childs then u wud have to change it everywhere
+it would be horrible thats why u have inheritance
+
+
+poly means many and morphism means forms
+so with single form you can take many other forms
+you can assign parent a child object
+when one function applied to dfferent objects
+you can have only method for everything
+
+
+instance of keyword can check if the object employee is an instance of object person
+if(people[i] instanceof Employee)---1
+people[i].getdescription but if you wanna access a method which is not overidden or not in the abstract class 
+or the base class then we can downcast the class which is higher in hierarchy
+((Employee)people[i]).work--2
+
+if you delete this condiion 1 then it will work however coz compilator believes that you know what u are doing and it says lets run this prog and check if the 
+connection is good or binding is good 
+this is called late binding so its always good to check if the condition is right by using 1
+
+
+
+class object
+there is a class name claled object ,when you extend that object class you can use its methods
+
+
+method to string,it is taking the name to the string
+we can overide the to string method from the object class and then return with sysout whatever we want
+its special coz we dont have use other methods like getx gety or downcast we can just use to string and return what we want
+
+
+final means last ,no changes allowed
+it is good idea to create final local variables for constant values
+	like date of employment
+	
+	
+	final classes cant be extended ,you make a class final only when you dont want anyone to extend it
+	like very secure infoi
+	
+	you also cant create final and abstract class
+	
+	final method cant be overriden
+	most time you will use it only for props
+	
+	
+	Interface is very similar class 
+	method inside interface is public and abstract
+	and prop is gonna be public final and static
+	you cant make the interface public since you have a public class in that file
+	and there can be only one public class per java file
+	method are abstract so they have to verriden later on
+	we implement interface means the class which implements interface wants to take after the prop 
+	of it
+	
+	similar to inheriting but implementing means you wanna take the behavior
+
+when you implement the interface you override all the abstract method
+
+you can implemenyt more than one behaviiour/interface 
+you cant extend more than one class
+you cant create an instance of the same interface
+	
+
+nested classes and inner classes
+inner classes can have access can have prop and methods of the outer class
+whereas we dont have access to prop of inner class from outer class even if make them public
+but when you construct the inner class or create the object reference of it you can acccess it
+class b is inner or nested class which means you cant create it without creating teh outer class
+
+
+static class is the nested class but not the inner class,it doesnt exist inside the outer class
+it can exist even if you dont create object of class a/outer class
+you can also create static variables inside static class
+
+
+inner class is used for grouping things that are related to each other coz its easier to maintain
+
+
+
+anonymous classess
+class without the name,the purpose of the anonymous class is to do something very fast
+
+
+
+
+
+
+Lambda expressions
+anonymous classes were used to create the behaviour
+the arrow -> stands for lambda expression
+when the behavior can be repeated many times then you use lambda expression
+or when you want to implement diffrent behaviours
+for each behavoior you have to have a second interface
+
+
+curly braces show where something starts an dwhere it ends
